@@ -1,0 +1,2 @@
+2024-05-09 22:09:24 [2@glpi]
+CSRF check failed for User ID: 2 at /front/authldap.form.php

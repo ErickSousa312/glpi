@@ -1,0 +1,62 @@
+[2024-05-08 16:39:46] glpiphplog.WARNING: Test logger  
+[2024-05-09 13:38:47] glpiphplog.WARNING:   *** PHP Warning (2): mysqli::real_connect(): (HY000/2002): Connection refused in /var/www/html/glpi/src/DBmysql.php at line 253
+  Backtrace :
+  src/DBmysql.php:253                                mysqli->real_connect()
+  src/DBmysql.php:209                                DBmysql->connect()
+  src/DBConnection.php:416                           DBmysql->__construct()
+  src/DBConnection.php:510                           DBConnection::switchToMaster()
+  inc/config.php:129                                 DBConnection::establishDBConnection()
+  inc/includes.php:58                                include_once()
+  front/logout.php:45                                include()
+  public/index.php:82                                require()
+  
+[2024-05-09 15:37:28] glpiphplog.WARNING: Test logger  
+[2024-05-09 15:40:32] glpiphplog.WARNING: Test logger  
+[2024-05-09 16:51:48] glpiphplog.WARNING:   *** PHP User Warning (512): Unable to bind to LDAP server `22571:389` anonymously
+error: Can't contact LDAP server (-1) in /var/www/html/glpi/src/AuthLDAP.php at line 3194
+  Backtrace :
+  src/AuthLDAP.php:3194                              trigger_error()
+  src/AuthLDAP.php:1666                              AuthLDAP::connectToServer()
+  front/authldap.form.php:67                         AuthLDAP::testLDAPConnection()
+  public/index.php:82                                require()
+  
+[2024-05-09 16:52:05] glpiphplog.WARNING:   *** PHP User Warning (512): Unable to bind to LDAP server `22571:389` anonymously
+error: Can't contact LDAP server (-1) in /var/www/html/glpi/src/AuthLDAP.php at line 3194
+  Backtrace :
+  src/AuthLDAP.php:3194                              trigger_error()
+  src/AuthLDAP.php:1666                              AuthLDAP::connectToServer()
+  front/authldap.form.php:84                         AuthLDAP::testLDAPConnection()
+  public/index.php:82                                require()
+  
+[2024-05-09 22:09:53] glpiphplog.WARNING:   *** PHP User Warning (512): Unable to bind to LDAP server `636:389` anonymously
+error: Can't contact LDAP server (-1) in /var/www/html/glpi/src/AuthLDAP.php at line 3194
+  Backtrace :
+  src/AuthLDAP.php:3194                              trigger_error()
+  src/AuthLDAP.php:1666                              AuthLDAP::connectToServer()
+  front/authldap.form.php:84                         AuthLDAP::testLDAPConnection()
+  public/index.php:82                                require()
+  
+[2024-05-09 22:35:13] glpiphplog.WARNING:   *** PHP User Warning (512): Unable to bind to LDAP server `127.0.0.1:389` anonymously
+error: Can't contact LDAP server (-1) in /var/www/html/glpi/src/AuthLDAP.php at line 3194
+  Backtrace :
+  src/AuthLDAP.php:3194                              trigger_error()
+  src/AuthLDAP.php:1666                              AuthLDAP::connectToServer()
+  front/authldap.form.php:84                         AuthLDAP::testLDAPConnection()
+  public/index.php:82                                require()
+  
+[2024-05-09 22:43:59] glpiphplog.WARNING:   *** PHP User Warning (512): Unable to bind to LDAP server `127.0.0.1:389` with RDN `rescuepoint\administrador`
+error: Can't contact LDAP server (-1) in /var/www/html/glpi/src/AuthLDAP.php at line 3194
+  Backtrace :
+  src/AuthLDAP.php:3194                              trigger_error()
+  src/AuthLDAP.php:1666                              AuthLDAP::connectToServer()
+  front/authldap.form.php:84                         AuthLDAP::testLDAPConnection()
+  public/index.php:82                                require()
+  
+[2024-05-09 23:02:50] glpiphplog.WARNING:   *** PHP User Warning (512): Unable to bind to LDAP server `127.0.0.1:389` with RDN `cn=admin,dc=rescuepoint,dc=com,dc=br`
+error: Can't contact LDAP server (-1) in /var/www/html/glpi/src/AuthLDAP.php at line 3194
+  Backtrace :
+  src/AuthLDAP.php:3194                              trigger_error()
+  src/AuthLDAP.php:1666                              AuthLDAP::connectToServer()
+  front/authldap.form.php:84                         AuthLDAP::testLDAPConnection()
+  public/index.php:82                                require()
+  
